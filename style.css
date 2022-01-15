@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+ --PaleBlue: hsl(225, 100%, 94%);
+ --BrightBlue: hsl(245, 75%, 52%);
+ --VeryPaleBlue: hsl(225, 100%, 98%);
+ --DesaturatedBlue: hsl(224, 23%, 55%);
+ --DarkBlue: hsl(223, 47%, 23%);
+ --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Red Hat Display";
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card__container {
+    height: 130vh;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--PaleBlue);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 500px;
+    width: 330px;
+    background-color: var(--White);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 25px 30px 25px ;
+}
+
+.card__heading {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.card__paragraph {
+    text-align: center;
+    font-weight: 300;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--DesaturatedBlue);
+}
+
+.card__box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--VeryPaleBlue);
+    height: 70px;
+    border-radius: 8px;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.box__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box__music {
+    margin-right: 15px;
+    height: 35px;
+
+}
+
+.box__heading {
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+
+.box__paragraph {
+    font-size: 12px;
+    color: var(--DesaturatedBlue);
+}
+
+.box__button {
+    font-size: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--BrightBlue);
+    font-weight: 700;
+}
+
+.box__button:active {
+    opacity: 0.8;
+}
+
+.box__button:hover {
+    text-decoration: none;
+}
+
+.card__payment {
+    width: 100%;
+    background-color: var(--BrightBlue);
+    color: var(--White);
+    margin: 15px 0;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px 1px var(--DesaturatedBlue);
+}
+
+.card__payment:active {
+    opacity: 0.8;
+}
+
+.card__cancel {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 5px, 0;
+    cursor: pointer;
+    color: var(--DesaturatedBlue);
+}
+
+.card__cancel:active {
+    font-weight: 900;
+    color: var(--DarkBlue);
+}
