@@ -44,6 +44,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 8px 16px 0px var(--DesaturatedBlue);
 }
 
 .card__image {
@@ -134,7 +135,7 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    box-shadow: 0px 5px 20px 1px var(--DesaturatedBlue);
+    box-shadow: 0px 4px 8px 0px var(--DesaturatedBlue);
 }
 
 .card__payment:active {
